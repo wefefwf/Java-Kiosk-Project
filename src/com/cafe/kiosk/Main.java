@@ -8,6 +8,7 @@ public class Main {
 
         Scanner user = new Scanner(System.in);//사용자의 키보드 입력을 위해 생성 UserScanner
         Menu menu = new Menu();
+        User usermanager = new User();
 
         while (true) {
 
@@ -30,9 +31,7 @@ public class Main {
                 } else {
                     break;
                 }
-            }
-
-            // 수량 입력
+            }// 수량 입력
             System.out.println("수량을 입력해주세요:");
             int qty;//while문 안에서 만든 qty값을 while밖에서도 써야함, (order.addOrder)
             while (true) {

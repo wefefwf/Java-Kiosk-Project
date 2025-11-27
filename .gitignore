@@ -1,0 +1,12 @@
+*.class
+bin/
+out/
+
+# Eclipse IDE
+.settings/
+*.classpath
+*.project
+
+# 기타
+*.log
+*.jar

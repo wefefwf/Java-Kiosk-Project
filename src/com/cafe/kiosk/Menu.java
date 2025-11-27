@@ -51,6 +51,8 @@ public class Menu {
 		System.out.println("▶오늘의 추천 메뉴는 " + menu[randomMenu].getMenuName() + "입니다.");
 	}
 	
+	
+	//이름으로 가격조회
     public int getPrice(String menuName) {
         for (MenuItems item : menu) { //for문이 메뉴 전체를 돌며 비교
             if (item.getMenuName().equals(menuName)) { //이름이 같으면 -> 그 메뉴의 가격 return
@@ -59,7 +61,6 @@ public class Menu {
         }
         return -1; //아니면 -1
     }
-    
 	//menu 오버라이딩
 	@Override
 	public String toString() {
